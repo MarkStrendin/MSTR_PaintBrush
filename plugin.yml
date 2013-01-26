@@ -1,0 +1,33 @@
+name: MSTR_Paintbrush
+main: ca.strendin.MSTR_PaintBrush.MSTR_PaintBrush
+version: 1.0
+description: A magical paintbrush for blocks
+author: Mark Strendin
+permissions:
+  MSTR_Paintbrush.reload:
+    description: Ability to reload config
+    default: op
+  MSTR_Paintbrush.paintbrush:
+    description: Allows access to the paintbrush tool 
+    default: op 
+  MSTR_Paintbrush.infotool:
+    description: Allows access to the info tool 
+    default: op 
+  MSTR_Paintbrush.clearinv:
+    description: Allows access to the clear inventory command 
+    default: op 
+commands:
+  clearinv:
+    aliases: [ci]
+    description: Clears your inventory
+    permission: MSTR_Paintbrush.clearinv
+  paintbrush:
+    aliases: [painter,pb]
+    description: Gives you the paintbrush tool
+    permission: MSTR_Paintbrush.paintbrush
+  infotool:
+    description: Gives you the duplicator and paintbrush tools
+    permission: MSTR_Paintbrush.infotool
+  mpbreload:
+    description: Reloads the configuration file
+    permission: MSTR_Paintbrush.reload
