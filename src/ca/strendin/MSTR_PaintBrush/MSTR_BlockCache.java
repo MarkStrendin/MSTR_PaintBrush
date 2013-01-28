@@ -14,6 +14,7 @@ public class MSTR_BlockCache { // Storage for player block data
         }
     }
     
+   
     public final static void storeThisBlock(Player player, Block block) {
         
         if (MSTR_BlockTools.isPaintableBlock(block)) {
@@ -25,7 +26,7 @@ public class MSTR_BlockCache { // Storage for player block data
 	            PlayerBlockStorage.put(player, block);
 	            
 	            MSTR_Comms.logThis(player.getDisplayName() + " set their ink to " + block.getType() + " with data value " + block.getData());
-	            MSTR_Comms.sendPlayer(player,"Ink set to: " + MSTR_Comms.itemColor + block.getType());
+	            MSTR_Comms.sendPlayer(player,"Ink set to: " + MSTR_Comms.itemColor + block.getType());	            
 	        } else {
 	        	MSTR_Comms.sendPlayerError(player, "Sorry, that block cannot be copied (blacklisted)");
 	        }

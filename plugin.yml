@@ -4,30 +4,30 @@ version: 1.0
 description: A magical paintbrush for blocks
 author: Mark Strendin
 permissions:
-  MSTR_Paintbrush.reload:
+  mstr_paintbrush.reload:
     description: Ability to reload config
     default: op
-  MSTR_Paintbrush.paintbrush:
+  mstr_paintbrush.paintbrush:
     description: Allows access to the paintbrush tool 
     default: op 
-  MSTR_Paintbrush.infotool:
+  mstr_paintbrush.infotool:
     description: Allows access to the info tool 
     default: op 
-  MSTR_Paintbrush.clearinv:
+  mstr_paintbrush.clearinv:
     description: Allows access to the clear inventory command 
     default: op 
 commands:
   clearinv:
     aliases: [ci]
     description: Clears your inventory
-    permission: MSTR_Paintbrush.clearinv
+    permission: mstr_paintbrush.clearinv
   paintbrush:
     aliases: [painter,pb]
     description: Gives you the paintbrush tool
-    permission: MSTR_Paintbrush.paintbrush
+    permission: mstr_paintbrush.paintbrush
   infotool:
     description: Gives you the duplicator and paintbrush tools
-    permission: MSTR_Paintbrush.infotool
+    permission: mstr_paintbrush.infotool
   mpbreload:
     description: Reloads the configuration file
-    permission: MSTR_Paintbrush.reload
+    permission: mstr_paintbrush.reload

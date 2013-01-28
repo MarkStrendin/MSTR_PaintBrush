@@ -10,18 +10,18 @@ public class MSTR_Permissions {
     }
     
     public static boolean canClearInventory(Player player) {
-        return hasPermission(player,"MSTR_PaintBrush.clearinv");         
+        return hasPermission(player,"mstr_paintbrush.clearinv");         
     }
     
     public static boolean canUsePaintBrush(Player player) {
-        return hasPermission(player,"MSTR_PaintBrush.paintbrush");         
+        return hasPermission(player,"mstr_paintbrush.paintbrush");         
     }
     
     public static boolean canUseInfoTool(Player player) {
-        return hasPermission(player,"MSTR_PaintBrush.infotool");         
+        return hasPermission(player,"mstr_paintbrush.infotool");         
     }
     
     public static boolean canReloadConfig(Player player) {
-        return hasPermission(player,"MSTR_PaintBrush.reload");         
+        return hasPermission(player,"mstr_paintbrush.reload");         
     }
 }
